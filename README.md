@@ -1,3 +1,4 @@
+
 # Road Network Extraction
 
 #### INTRODUCTION
@@ -10,28 +11,35 @@ The main purpose of this project is to extract roads from Aerial images and help
 	2.2. [Thresholding after Greyscale conversion](#Thresholding-after-Greyscale-conversion)
 	2.3. [Density Based Clustering after thresholding](#Density-Based-Clustering-after-thresholding.)
 	2.4. [Extracting Road Clusters](#Extracting-Road-Clusters)
-3. [Comparison with some of the proposed methods ](#Comparison-with-some-of-the-proposed-methods )  
-4. [Conclusion](#Conclusion)  
+3. [Comparison with some of the proposed methods ](#Comparison-with-some-of-the-proposed-methods )
+4. [Conclusion](#Conclusion)
 5. [Future Work](#Future-Work)
 6. [References](#References)
 7. [Contributors](#Contributors)
   
+##### Sample Examples processed with the proposed algoithm :
+Sample 1 :
 ![Processed Image 1](https://springflee.files.wordpress.com/2020/02/d1.png)
 
+Sample 2:
 ![Processed Image 2 ](https://springflee.files.wordpress.com/2020/02/d2.png)
 #### PROPOSED WORK
 Our proposed system consists of three stages. Firstly pre-processing of image is done.The image is converted into grayscale image and thresholding is applied to segment the darker and lighter regions of the image. Secondly clustering is applied using density based which then clusters the image into different objects. Thirdly post-processing is done in which we apply Thining algorithm to reduce foregrounds and preserving the extent and connectivity of the regions. After thining is applied Curve  Fitting is done to joint the broken roads followed by finding the elongated path which will produce the desired result. 
 
 ![enter image description here](https://springflee.files.wordpress.com/2020/02/1-1.png)
 #### Steps
-#### 1. Greyscale Image Conversion 
+#### 1. Greyscale Image Conversion
+Image is first converted into greyscale.
 ![enter image description here](https://springflee.files.wordpress.com/2020/02/backandwhite_road.png)
-#### 2. Thresholding after Greyscale conversion
+#### 2. Thresholding
+Greyscale Image obtained is thresholded with a certain value.
 ![Thresholding from greyscale image.](https://springflee.files.wordpress.com/2020/02/image-004.png)
 #### 3. Density Based Clustering after thresholding.
-Yellow Boxes showing the Road Clusters and Red Boxes showing the Non-Road Clusters.
+After thresholding, the image is clustered based on its density.
+Here below, yellow boxes are showing the road clusters and red boxes are showing the non-road clusters.
 ![Clustered into different labels](https://springflee.files.wordpress.com/2020/02/image-030.png)
 #### 4. Extracting Road Clusters
+The elongated clusters are then extracted.
 Below yellow pixels are the road clusters shown yellow in colour.
 ![Road Clusters shown in yellow colour](https://springflee.files.wordpress.com/2020/02/image-029.png)
 
@@ -61,10 +69,10 @@ Works Cited:
 [9] Weixing Wang , Nan Yang , Yi Zhang, Fengping Wang , Ting Cao, Patrik Eklund - “A review of road extraction from remote sensing images”. 
 [10] Qixiang Ye, Wen Gao, Wei Zeng- “Color Image Segmentation using Density-Based Clustering”.
 #### Contributors 
-Pinku Swargiary
-Sanjib Saikia
-Malong Engti
-Sibangkar Basumatary
-Indro Tokbi
-Dipankar Das
-Nilim Kramsa
+- Pinku Swargiary
+- Sanjib Saikia
+- Malong Engti
+- Sibangkar Basumatary
+- Indro Tokbi
+- Dipankar Das
+ - Nilim Kramsa
