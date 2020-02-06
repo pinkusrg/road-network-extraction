@@ -7,11 +7,11 @@ The main purpose of this project is to extract roads from Aerial images and help
 ## Table of contents  
 1. [PROPOSED WORK](#PROPOSED-WORK)  
 2. [Steps](#Steps)  
-	2.1. [Greyscale Image Conversion](#Greyscale-Image-Conversion)
-	2.2. [Thresholding after Greyscale conversion](#Thresholding-after-Greyscale-conversion)
-	2.3. [Density Based Clustering after thresholding](#Density-Based-Clustering-after-thresholding.)
-	2.4. [Extracting Road Clusters](#Extracting-Road-Clusters)
-3. [Comparison with some of the proposed methods ](#Comparison-with-some-of-the-proposed-methods )
+	2.1. [Greyscale Image Conversion](#Greyscale-Image-Conversion)<br>
+	2.2. [Thresholding after Greyscale conversion](#Thresholding-after-Greyscale-conversion)<br>
+	2.3. [Density Based Clustering after thresholding](#Density-Based-Clustering-after-thresholding.)<br>
+	2.4. [Extracting Road Clusters](#Extracting-Road-Clusters)<br>
+3. [Comparison with some of the proposed methods ](#Comparison-with-some-of-the-proposed-methods )<br>
 4. [Conclusion](#Conclusion)
 5. [Future Work](#Future-Work)
 6. [References](#References)
@@ -26,11 +26,12 @@ Sample 2:<br>
 #### PROPOSED WORK
 Our proposed system consists of three stages. Firstly pre-processing of image is done.The image is converted into grayscale image and thresholding is applied to segment the darker and lighter regions of the image. Secondly clustering is applied using density based which then clusters the image into different objects. Thirdly post-processing is done in which we apply Thining algorithm to reduce foregrounds and preserving the extent and connectivity of the regions. After thining is applied Curve  Fitting is done to joint the broken roads followed by finding the elongated path which will produce the desired result. 
 
-![flowchart of the proposed](https://springflee.files.wordpress.com/2020/02/1-1.png)
+![flowchart of the proposed](https://springflee.files.wordpress.com/2020/02/image-000.jpg)
+<br>
 #### Steps
 #### 1. Greyscale Image Conversion
 Image is first converted into greyscale.<br>
-![Black and White Converted](https://springflee.files.wordpress.com/2020/02/backandwhite_road.png)
+![Black and White Converted](https://springflee.files.wordpress.com/2020/02/yellowroad.png)
 #### 2. Thresholding
 Greyscale Image obtained is thresholded with a certain value.<br>
 ![Thresholding from greyscale image.](https://springflee.files.wordpress.com/2020/02/image-004.png)
@@ -41,7 +42,7 @@ Here below, yellow boxes are showing the road clusters and red boxes are showing
 #### 4. Extracting Road Clusters
 The elongated clusters are then extracted.
 Below yellow pixels are the road clusters shown yellow in colour.<br>
-![Road Clusters shown in yellow colour](https://springflee.files.wordpress.com/2020/02/image-029.png)
+![Road Clusters shown in yellow colour](https://springflee.files.wordpress.com/2020/02/yellowroad.png)
 
 ### Comparison with some of the proposed methods :
 #### 1.  
@@ -58,16 +59,16 @@ The proposed method of road extraction uses preprocessing of the image at the fi
 So far we have performed up to thinning operation and curve fitting is to be applied which will be the final output of the road. After Thinning is done Curve Fitting is applied to join the broken lines or broken curves in the pre-processing of the image and clustering.
 #### References 
 Works Cited: 
-[1] Rohit Maurya, Dr. Shalini Singh, Dr. P.R Gupta, Manish Kumar Sharma - “Road Extraction Using K-Means Clustering and Morphological Operations”. 
-[2] Mingjun Song and Daniel Civco[2] – “Road Extraction Using SVM and Image Segmentation”. 
-[3] Pankaj Pratap Singh & R. D. Garg – “Automatic Road Extraction from High Resolution Satellite Image using Adaptive Global Thresholding and Morphological Operations”. 
-[4] Chunsun Zhang, Shunji Murai, Emmanuel Baltsavias – “Road Network Detection by Mathematical Morphology”. 
-[5] Delio Vicini, Matej Hamas and Taivo Pungas – “ Road Extraction from Aerial Images”. 
-[6] M. Mokhtarzade, M. J. Valadan Zoej, H. Ebadi – “Automatic road extraction from high resolution satellite images using neural networks, texture analysis, fuzzy clustering and genetic algorithms”. 
-[7] Şafak Altay Açar, Şafak Bayır – “Road Detection Using Classification Algorithms”. 
-[8] M. Mokhtarzade, M. J. Valadan Zoej[8] – “Road Extraction using artificial neural networks”. 
-[9] Weixing Wang , Nan Yang , Yi Zhang, Fengping Wang , Ting Cao, Patrik Eklund - “A review of road extraction from remote sensing images”. 
-[10] Qixiang Ye, Wen Gao, Wei Zeng- “Color Image Segmentation using Density-Based Clustering”.
+- [1] Rohit Maurya, Dr. Shalini Singh, Dr. P.R Gupta, Manish Kumar Sharma - “Road Extraction Using K-Means Clustering and Morphological Operations”. 
+- [2] Mingjun Song and Daniel Civco[2] – “Road Extraction Using SVM and Image Segmentation”. 
+- [3] Pankaj Pratap Singh & R. D. Garg – “Automatic Road Extraction from High Resolution Satellite Image using Adaptive Global Thresholding and Morphological Operations”. 
+- [4] Chunsun Zhang, Shunji Murai, Emmanuel Baltsavias – “Road Network Detection by Mathematical Morphology”. 
+- [5] Delio Vicini, Matej Hamas and Taivo Pungas – “ Road Extraction from Aerial Images”. 
+- [6] M. Mokhtarzade, M. J. Valadan Zoej, H. Ebadi – “Automatic road extraction from high resolution satellite images using neural networks, texture analysis, fuzzy clustering and genetic algorithms”. 
+- [7] Şafak Altay Açar, Şafak Bayır – “Road Detection Using Classification Algorithms”. 
+- [8] M. Mokhtarzade, M. J. Valadan Zoej[8] – “Road Extraction using artificial neural networks”. 
+- [9] Weixing Wang , Nan Yang , Yi Zhang, Fengping Wang , Ting Cao, Patrik Eklund - “A review of road extraction from remote sensing images”. 
+- [10] Qixiang Ye, Wen Gao, Wei Zeng- “Color Image Segmentation using Density-Based Clustering”.
 #### Contributors 
 - Pinku Swargiary
 - Sanjib Saikia
