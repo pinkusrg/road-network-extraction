@@ -31,7 +31,7 @@ Our proposed system consists of three stages. Firstly pre-processing of image is
 #### Steps
 #### 1. Greyscale Image Conversion
 Image is first converted into greyscale.<br>
-![Black and White Converted](https://springflee.files.wordpress.com/2020/02/yellowroad.png)
+![Black and White Converted](https://springflee.files.wordpress.com/2020/02/image-002.jpg)
 #### 2. Thresholding
 Greyscale Image obtained is thresholded with a certain value.<br>
 ![Thresholding from greyscale image.](https://springflee.files.wordpress.com/2020/02/image-004.png)
