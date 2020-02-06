@@ -18,29 +18,29 @@ The main purpose of this project is to extract roads from Aerial images and help
 7. [Contributors](#Contributors)
   
 ##### Sample Examples processed with the proposed algoithm :
-Sample 1 :
+Sample 1 :<br>
 ![Processed Image 1](https://springflee.files.wordpress.com/2020/02/d1.png)
 
-Sample 2:
-![Processed Image 2 ](https://springflee.files.wordpress.com/2020/02/d2.png)
+Sample 2:<br>
+![Processed Image 2](https://springflee.files.wordpress.com/2020/02/d2.png)
 #### PROPOSED WORK
 Our proposed system consists of three stages. Firstly pre-processing of image is done.The image is converted into grayscale image and thresholding is applied to segment the darker and lighter regions of the image. Secondly clustering is applied using density based which then clusters the image into different objects. Thirdly post-processing is done in which we apply Thining algorithm to reduce foregrounds and preserving the extent and connectivity of the regions. After thining is applied Curve  Fitting is done to joint the broken roads followed by finding the elongated path which will produce the desired result. 
 
-![enter image description here](https://springflee.files.wordpress.com/2020/02/1-1.png)
+![flowchart of the proposed](https://springflee.files.wordpress.com/2020/02/1-1.png)
 #### Steps
 #### 1. Greyscale Image Conversion
-Image is first converted into greyscale.
-![enter image description here](https://springflee.files.wordpress.com/2020/02/backandwhite_road.png)
+Image is first converted into greyscale.<br>
+![Black and White Converted](https://springflee.files.wordpress.com/2020/02/backandwhite_road.png)
 #### 2. Thresholding
-Greyscale Image obtained is thresholded with a certain value.
+Greyscale Image obtained is thresholded with a certain value.<br>
 ![Thresholding from greyscale image.](https://springflee.files.wordpress.com/2020/02/image-004.png)
 #### 3. Density Based Clustering after thresholding.
 After thresholding, the image is clustered based on its density.
-Here below, yellow boxes are showing the road clusters and red boxes are showing the non-road clusters.
+Here below, yellow boxes are showing the road clusters and red boxes are showing the non-road clusters.<br>
 ![Clustered into different labels](https://springflee.files.wordpress.com/2020/02/image-030.png)
 #### 4. Extracting Road Clusters
 The elongated clusters are then extracted.
-Below yellow pixels are the road clusters shown yellow in colour.
+Below yellow pixels are the road clusters shown yellow in colour.<br>
 ![Road Clusters shown in yellow colour](https://springflee.files.wordpress.com/2020/02/image-029.png)
 
 ### Comparison with some of the proposed methods :
